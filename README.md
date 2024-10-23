@@ -7,15 +7,25 @@ Prometheus is currently being installed together with the cluster provisioning b
 The package includes:
 
 From kube-prometheus (Deployed to monitoring namespace)
+
 The Prometheus Operator
+
 Highly available Prometheus
+
 Highly available Alertmanager
+
 Prometheus node-exporter
+
 Prometheus Adapter for Kubernetes Metrics APIs (Only for Resource Metrics)
+
 kube-state-metrics
+
 Grafana
+
 From K8S-Prometheus-Adapter (Deployed to custom-metrics namespace)
+
 Custom Metrics Adapter
+
 This deployment of Prometheus is configured to search for all available ServiceMonitors in all namespaces, thus nothing special is required to be changed, in order to get Prometheus to scrape the metrics, except for setting up the ServiceMonitor.
 
 SETUP
